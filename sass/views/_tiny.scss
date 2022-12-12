@@ -1,0 +1,53 @@
+/*-------------------------------------tinydesk section------------------------------*/
+
+#tinyVideo {
+    border-radius: 2rem;
+    max-width: 80vw;
+
+    @media(min-width:750px) {
+        border-radius: 2rem;
+        max-width: 30vw;
+    }
+}
+
+#tinyArt {
+    width: 180px;
+    transform: rotate(-10deg);
+    animation: blink-1 3s both;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1;
+    top: -33px
+}
+
+.contenedor-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.iframe-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+/*-------------animation---------------*/
+
+@keyframes blink-1 {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+

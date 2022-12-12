@@ -1,0 +1,326 @@
+/*--------------------------------global section-------------------------------------------*/
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  padding-top: 15vh;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+body h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+body span {
+  color: white;
+  font-size: 1.1rem;
+}
+body p {
+  color: white;
+}
+body h2 {
+  color: white;
+}
+
+/*--------------------------------header section-------------------------------------------*/
+header {
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  position: relative;
+}
+header img {
+  width: 120px;
+}
+header a:hover {
+  color: white;
+}
+@media (min-width: 750px) {
+  header img {
+    width: 170px;
+  }
+  header a {
+    font-size: 1.5rem;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+}
+
+/*--------------------------------footer section-------------------------------------------*/
+footer {
+  background-color: black;
+}
+footer img {
+  width: 80px;
+}
+
+.footer__redes img {
+  width: 30px;
+}
+@media (min-width: 750px) {
+  .footer__redes img {
+    width: 35px;
+  }
+}
+
+/*---------------------------------------inicio section-------------------------------*/
+main a:hover {
+  color: #FF3CAC;
+}
+
+blockquote,
+figcaption {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+figure {
+  background-color: rgba(0, 0, 0, 0.603);
+  padding: 5px 20px 0px 20px;
+  border-radius: 2rem;
+  animation-name: aparecer;
+  animation-duration: 6s;
+}
+
+/*-----animation-------*/
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.blockquote-footer {
+  padding-bottom: -50px;
+}
+
+/*------------------------------albums section--------------------------*/
+.card {
+  width: 400px;
+  margin: 0px 0px 25px 15px;
+}
+@media (min-width: 750px) {
+  .card {
+    width: 500px;
+  }
+}
+.card-title {
+  color: white;
+  text-align: center;
+}
+.card-body {
+  height: 300px;
+}
+@media (min-width: 750px) {
+  .card-body {
+    height: 350px;
+  }
+}
+.card iframe {
+  margin-top: 5px;
+  height: 230px;
+}
+@media (min-width: 750px) {
+  .card iframe {
+    margin-top: 5px;
+    height: 280px;
+  }
+}
+
+/*--------------------------------about section-------------------------------------------*/
+#aboutArt {
+  width: 100px;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  transform: rotate(-10deg);
+  animation-name: cambiar;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+@media (min-width: 750px) {
+  #aboutArt {
+    width: 160px;
+    top: 400px;
+  }
+}
+
+/*-----------animation------------*/
+@keyframes cambiar {
+  0% {
+    opacity: 0;
+    rotate: -20deg;
+  }
+  25% {
+    rotate: -20deg;
+  }
+  75% {
+    rotate: 10deg;
+  }
+  100% {
+    opacity: 1;
+    rotate: 0deg;
+  }
+}
+section p {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+@media (min-width: 750px) {
+  section {
+    margin: 0px 20px;
+  }
+  section p {
+    line-height: 2;
+  }
+}
+
+.carousel img {
+  height: 600px;
+}
+.carousel-item {
+  transition: transform 1s ease, opacity 0.2s ease-out;
+}
+
+/*-------------------------------------tinydesk section------------------------------*/
+#tinyVideo {
+  border-radius: 2rem;
+  max-width: 80vw;
+}
+@media (min-width: 750px) {
+  #tinyVideo {
+    border-radius: 2rem;
+    max-width: 30vw;
+  }
+}
+
+#tinyArt {
+  width: 180px;
+  transform: rotate(-10deg);
+  animation: blink-1 3s both;
+  animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 1;
+  top: -33px;
+}
+
+.contenedor-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.iframe-responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+/*-------------animation---------------*/
+@keyframes blink-1 {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+/*-----------------------------------contacto section--------------------------*/
+form,
+#emailHelp {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.507);
+  padding: 20px;
+  border-radius: 1.5rem;
+}
+
+input {
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #2B86C5 100%);
+}
+
+.contacto h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*----------backgrounds-------------*/
+main.inicio {
+  background-image: url(../imagenes/inicio-fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main.about {
+  background-image: url(https://i.postimg.cc/sXZnfLMy/about-fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main.tiny {
+  background-image: url(../imagenes/tiny-fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main.contacto {
+  background-image: url(../imagenes/contacto-fondo.png);
+  background-size: cover;
+  background-position: center;
+}
+main.albums {
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #2B86C5 100%);
+}
+
+/*-----------card backgrounds---------*/
+.album-1 {
+  background-image: linear-gradient(-60deg, #16a085 0%, #bef43f 100%);
+}
+
+.album-2 {
+  background-image: linear-gradient(-30deg, #2b4584 0%, #4a9e48 100%);
+}
+
+.album-3 {
+  background-image: linear-gradient(-30deg, #ffefba 0%, #ffffff 100%);
+}
+
+.album-4 {
+  background-image: linear-gradient(-30deg, #ffefba 0%, #ffffff 100%);
+}
+
+.album-5 {
+  background-image: linear-gradient(-30deg, #2c609c 0%, #28b8d5 100%);
+}
+
+.album-6 {
+  background-image: linear-gradient(-30deg, #f75672 0%, #e89d1f 100%);
+}
+
+.album-7 {
+  background-image: linear-gradient(-30deg, #e89d1f 0%, #FFEFBA 100%);
+}
+
+.album-8 {
+  background-image: linear-gradient(-30deg, #ff7b74 0%, #ffefba 100%);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+@use "../utilities/variables";
+/*------------------------------albums section--------------------------*/
+
+.card {
+    width: 400px;
+    margin: 0px 0px 25px 15px;
+
+    @media(min-width:750px) {
+        width: 500px;
+    }
+
+    &-title {
+        color: variables.$color-text;
+        text-align: center;
+    }
+
+    &-body{
+        height: 300px;
+    
+        @media(min-width:750px) {
+            height: 350px;
+        }
+    
+    }
+
+    iframe {
+        margin-top: 5px;
+        height: 230px;
+    
+        @media(min-width:750px) {
+            margin-top: 5px;
+            height: 280px;
+        }
+    }
+
+}
+

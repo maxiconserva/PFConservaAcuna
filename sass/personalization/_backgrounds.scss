@@ -1,0 +1,70 @@
+@use "../utilities/mixins";
+
+/*----------backgrounds-------------*/
+main {
+    &.inicio {
+        background-image: url(../imagenes/inicio-fondo.jpg);
+
+        @include mixins.background-pos;
+    }
+
+    &.about {
+        background-image: url(https://i.postimg.cc/sXZnfLMy/about-fondo.jpg);
+
+        @include mixins.background-pos;
+
+
+    }
+
+    &.tiny {
+        background-image: url(../imagenes/tiny-fondo.jpg);
+
+        @include mixins.background-pos;
+    }
+
+    &.contacto {
+        background-image: url(../imagenes/contacto-fondo.png);
+
+        @include mixins.background-pos;
+    }
+
+    &.albums {
+        background-color: #FF3CAC;
+        background-image: linear-gradient(225deg, #FF3CAC 0%, #2B86C5 100%);
+
+    }
+
+}
+
+/*-----------card backgrounds---------*/
+.album-1 {
+    background-image: linear-gradient(-60deg, #16a085 0%, #bef43f 100%);
+}
+
+.album-2 {
+    background-image: linear-gradient(-30deg, #2b4584 0%, #4a9e48 100%);
+}
+
+.album-3 {
+    background-image: linear-gradient(-30deg, #ffefba 0%, #ffffff 100%);
+}
+
+.album-4 {
+    background-image: linear-gradient(-30deg, #ffefba 0%, #ffffff 100%);
+}
+
+.album-5 {
+    background-image: linear-gradient(-30deg, #2c609c 0%, #28b8d5 100%);
+}
+
+.album-6 {
+    background-image: linear-gradient(-30deg, #f75672 0%, #e89d1f 100%);
+}
+
+.album-7 {
+    background-image: linear-gradient(-30deg, #e89d1f 0%, #FFEFBA 100%);
+}
+
+.album-8 {
+    background-image: linear-gradient(-30deg, #ff7b74 0%, #ffefba 100%);
+}
